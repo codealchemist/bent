@@ -3,7 +3,8 @@ const { WebClient } = require('@slack/client')
 
 const app = express()
 const port = process.env.PORT || 3000
-const token = process.env.SLACK_TOKEN || 'xoxp-142872758064-153754285521-481194793589-2b91d48c194c51b3f78ab7c29a3e43dc'
+const token = process.env.SLACK_TOKEN || 'xoxp-142872758064-153754285521-482054379463-61519a9372b7d27cc759fe9931d4c65b'
+console.log('TOKEN:', token)
 const slack = new WebClient(token)
 
 app.get('/topic/:topicId', (req, res) => {
