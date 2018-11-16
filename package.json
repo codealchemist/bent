@@ -23,7 +23,6 @@
   },
   "homepage": "https://github.com/codealchemist/bent#readme",
   "dependencies": {
-    "@slack/client": "^4.8.0",
     "express": "^4.16.4",
     "request": "^2.88.0"
   },
