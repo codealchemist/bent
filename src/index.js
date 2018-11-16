@@ -3,7 +3,7 @@ const request = require('request')
 const topics = require('./topics')
 const app = express()
 const port = process.env.PORT || 3000
-const url = process.env.SLACK_URL || 'https://hooks.slack.com/services/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'
+const url = process.env.SLACK_URL
 
 app.get('/topic/:topicId', (req, res) => {
   const { topicId } = req.params
